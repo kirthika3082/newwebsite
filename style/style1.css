@@ -1,0 +1,130 @@
+/* Reset some default styles to ensure consistency */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the navigation bar */
+.nav-bar {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-bar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-bar ul {
+    list-style: none;
+}
+
+.nav-bar li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style for the tour content section */
+.tour-content {
+    padding: 20px;
+}
+
+.tour-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tour-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.tour-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tour-item {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    max-width: 300px;
+    text-align: center;
+    position: relative; /* Needed for captions */
+}
+.tour1
+{
+  display: flex;
+  flex-flow: row;
+  background-color: #d1608f;
+  font-size: 18px;
+  font-family: Roboto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.tour-item img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.tour-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Style for colorful captions */
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #c41a7d;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .nav-bar .logo {
+        font-size: 20px;
+    }
+
+    .nav-bar ul {
+        text-align: center;
+    }
+
+    .nav-bar li {
+        display: block;
+        margin: 5px 0;
+    }
+}
